@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_detail_header"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/p_editChildEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.8">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editChildEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/monte"
+                android:hint="Child Email"
+                android:imeOptions="actionDone"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:textColor="#000"
+                app:fontFamily="@font/monte" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <ImageView
+            android:id="@+id/search_email"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp"
+            android:layout_weight="0.2"
+            android:padding="10dp"
+            android:src="@drawable/search_icon" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txt_email_found"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/monte"
+        android:gravity="end"
+        android:text=" Child email found."
+        android:textColor="#00cc00"
+        android:visibility="gone"
+        app:fontFamily="@font/monte" />
+
+    <Button
+        android:id="@+id/buttonRequest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_buttton"
+        android:fontFamily="@font/monte"
+        android:text="@string/send_app_usage_request"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:fontFamily="@font/monte" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Note: Enter your child email above and if the email found then  "
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:scrollbars="none"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:fontFamily="@font/monte"
+            android:gravity="left|center"
+            android:text="  Accepted User's / Child's"
+            android:textAllCaps="false"
+            app:fontFamily="@font/monte" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swipe_refresh"
+            android:scrollbars="none"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/enable"
+            android:layout_marginTop="5dp">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/acceptedChildRecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+            </android.support.v7.widget.RecyclerView>
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </LinearLayout>
+</LinearLayout>

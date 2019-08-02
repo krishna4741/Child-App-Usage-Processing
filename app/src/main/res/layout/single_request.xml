@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp"
+    android:background="@drawable/customborder"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/from_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/monte"
+            android:text="Parent"
+            android:textSize="18sp"
+            app:fontFamily="@font/monte" />
+
+
+        <TextView
+            android:id="@+id/to_child"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/monte"
+            android:text="Child"
+            android:layout_marginTop="10dp"
+            app:fontFamily="@font/monte" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay_accept_reject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <Button
+            android:id="@+id/accept_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttton_height_size"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_rounded_black_outline"
+            android:text="Accept"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/buttton_size_medium" />
+
+        <Button
+            android:id="@+id/reject_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/buttton_height_size"
+            android:layout_centerVertical="true"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_rounded_black_outline"
+            android:backgroundTint="@color/red"
+            android:text="Reject"
+
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/buttton_size_medium" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

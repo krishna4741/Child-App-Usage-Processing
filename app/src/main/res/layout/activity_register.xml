@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/monte"
+        android:text="Sign Up"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:fontFamily="@font/monte" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/customborder"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/monte"
+                android:hint="Name"
+                android:inputType="textEmailAddress"
+                android:textColor="#000"
+                app:fontFamily="@font/monte" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editEmail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:fontFamily="@font/monte"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="#000"
+                app:fontFamily="@font/monte" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@android:color/black">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editPassword"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editEmail"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:fontFamily="@font/monte"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="#000"
+                app:fontFamily="@font/monte" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_buttton"
+            android:fontFamily="@font/monte"
+            android:text="SIGN UP"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:fontFamily="@font/monte" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonRegister"
+            android:layout_gravity="end"
+            android:layout_marginLeft="10dp"
+            android:background="@null"
+
+            android:fontFamily="@font/monte"
+            android:text="Back to Sign In"
+            android:textAllCaps="false"
+            app:fontFamily="@font/monte" />
+    </LinearLayout>
+</RelativeLayout>

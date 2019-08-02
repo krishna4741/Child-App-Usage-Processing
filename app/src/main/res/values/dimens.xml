@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <!--genaral spacing-->
+    <dimen name="spacing_small">3dp</dimen>
+    <dimen name="spacing_medium">5dp</dimen>
+    <dimen name="spacing_middle">10dp</dimen>
+    <dimen name="spacing_larges">13dp</dimen>
+    <dimen name="spacing_large">15dp</dimen>
+    <dimen name="spacing_smlarge">18dp</dimen>
+    <dimen name="spacing_mxlarge_parent_layout">24dp</dimen>
+    <dimen name="spacing_xlarge">35dp</dimen>
+    <dimen name="buttton_weight_size_medium">200dp</dimen>
+    <dimen name="buttton_height_size_medium">43dp</dimen>
+    <dimen name="buttton_height_size">40dp</dimen>
+    <dimen name="layout_bottom_heigth">60dp</dimen>
+    <dimen name="spacing_mlarge_somal">8dp</dimen>
+    <dimen name="spacing_mlarge_medium">10dp</dimen>
+    <dimen name="spacing_mlarge">20dp</dimen>
+    <dimen name="spacing_mlarge_top">60dp</dimen>
+    <dimen name="header_one_text_size_large">22sp</dimen>
+    <dimen name="edit_text_size_medium">16sp</dimen>
+    <dimen name="edit_text_size_large_medium">16sp</dimen>
+    <dimen name="radio_button_size">16sp</dimen>
+    <dimen name="textview_size_small">15sp</dimen>
+    <dimen name="textview_size_medium">17sp</dimen>
+    <dimen name="buttton_size_medium">16sp</dimen>
+    <dimen name="otp_textsize_medium">15sp</dimen>
+
+    // layout large
+
+    <dimen name="laylarge_textview_size_small">18sp</dimen>
+    <dimen name="laylarge_textview_size_medium">20sp</dimen>
+
+    // layout xlarge
+    <dimen name="layxlarge_edit_text_size_big">30sp</dimen>
+
+
+    <!--App invite screen-->
+    <dimen name="contact_name">15dp</dimen>
+    <dimen name="contact_number">12dp</dimen>
+
+
+    <!--CardView size -->
+    <dimen name="cardview_layout_marginleft">10dp</dimen>
+    <dimen name="cardview_layout_marginright">10dp</dimen>
+    <dimen name="cardview_layout_margintop">20dp</dimen>
+    <dimen name="cardview_cardCornerradius">5dp</dimen>
+
+
+    <!--genaral spacing-->
+    <dimen name="create_left_and_right_margin">2dp</dimen>
+    <dimen name="default_left_right_margin">5dp</dimen>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_height">230dp</dimen>
+
+
+</resources>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="6dp"
+    android:background="@drawable/customborder"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txt_child_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@+id/view_details"
+        android:layout_toEndOf="@+id/view_details"
+        android:text="Child Email"
+        android:fontFamily="@font/monte"
+        app:fontFamily="@font/monte"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/view_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/round_buttton"
+        android:text="    View Details   "
+        android:textAllCaps="false"
+        android:fontFamily="@font/monte"
+        app:fontFamily="@font/monte"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
